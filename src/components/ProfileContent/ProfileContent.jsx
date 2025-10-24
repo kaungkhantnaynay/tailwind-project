@@ -1,10 +1,13 @@
 import React from 'react'
 import Ellipsis from '/images/icon-ellipsis.svg'
 
-function ProfileContent({title, hours, last, color}) {
+function ProfileContent({title, hours, last, color, img}) {
+  console.log(img)
   return (
     <div className={`rounded-2xl `} style={{background:color}}>
-      <div className='h-8'></div>
+      <div className={`h-8 flex justify-end `} >
+        <img src={img} alt="img" className='w-16 h-16' />
+      </div>
       <div className='bg-Navy-900 p-6 rounded-2xl relative top-2 text-white'>
         <div className='flex justify-between items-center mb-4'>
           <h2 className='text-lg font-medium'>{title}</h2>
