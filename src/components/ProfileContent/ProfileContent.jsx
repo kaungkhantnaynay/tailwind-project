@@ -3,9 +3,9 @@ import Ellipsis from '/images/icon-ellipsis.svg'
 
 function ProfileContent({title, hours, last, color}) {
   return (
-    <div className={`rounded-2xl overflow-hidden`} style={{background:color}}>
+    <div className={`rounded-2xl `} style={{background:color}}>
       <div className='h-8'></div>
-      <div className='bg-Navy-900 p-6 rounded-t-2xl text-white'>
+      <div className='bg-Navy-900 p-6 rounded-2xl relative top-2 text-white'>
         <div className='flex justify-between items-center mb-4'>
           <h2 className='text-lg font-medium'>{title}</h2>
           <img src={Ellipsis} alt="ellipsis" className='w-4' />
